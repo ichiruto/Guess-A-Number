@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <title>Guess a Number</title>
+
+</head>
+<body>
+    <header>
+        <a href="#"><h1>Guess a Number</h1></a>
+    </header>
+    <main class="container">
+        <form id="formulario">
+            <label for="kick">Digite um numero de 0 a 10</label>
+            <input type="number" id="kick" max="10" placeholder="0">
+            <button type="submit">Jogue</button>
+        </form>
+
+        <section class="result-box" id="result">
+            <h2 id="status">Advinhe o numero sorteado!</h2>
+            <span id="attemp">Tentativas:</span>
+        </section>
+
+        <button id="btnRestart" onclick="restart()">Jogar de novo!</button>
+
+    </main>
+
+    <footer>
+        <p>GuessNumber, 2021 &copy;</p>
+    </footer>
+    <script src="./JS/main.js" ></script>
+</body>
+</html>
